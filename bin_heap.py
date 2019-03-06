@@ -30,7 +30,7 @@ class Bin_Heap:
     def min_child(self, k):
         if 2 * k + 1 > self.heap_size:
             return 2 * k
-        elif self.heap_list[2 * k] > self.heap_list[2 * k + 1]:
+        elif self.heap_list[2 * k] < self.heap_list[2 * k + 1]:
             return 2 * k
         else:
             return 2 * k + 1
